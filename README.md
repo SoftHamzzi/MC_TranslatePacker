@@ -19,6 +19,14 @@
               모드팩에 번역이 자동으로 적용됨
 ```
 
+**TranslatePacker 실행 화면**
+
+![TranslatePacker UI](https://github.com/user-attachments/assets/c82a5344-88f6-4155-82b1-7fa94fe73223)
+
+**생성된 한글패치 설치 파일 실행 화면**
+
+![한글패치 설치 UI](https://github.com/user-attachments/assets/654fe760-3ac8-4be6-9071-27c8dfd1e21f)
+
 ---
 
 ## 주요 기능
@@ -80,7 +88,7 @@ uv sync
 uv run python build.py
 ```
 
-`dist/TranslatePacker.exe` 가 생성됩니다.
+`builds/TranslatePacker.exe` 가 생성됩니다.
 
 ### 소스에서 직접 실행
 

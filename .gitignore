@@ -4,7 +4,7 @@ __pycache__/
 
 # 빌드 산출물
 build_tmp/
-dist/
+builds/installer_stub.exe
 
 # 가상환경
 .venv/

@@ -26,11 +26,11 @@ def build_stub():
         "--onefile",
         "--windowed",
         "--noconfirm",
-        "--distpath", str(ROOT / "dist"),
+        "--distpath", str(ROOT / "builds"),
         "--workpath", str(ROOT / "build_tmp" / "stub"),
         "--specpath", str(ROOT / "build_tmp"),
     ])
-    stub_src = ROOT / "dist" / "installer_stub.exe"
+    stub_src = ROOT / "builds" / "installer_stub.exe"
     stub_dst = ROOT / "installer_stub.exe"
     shutil.copy2(stub_src, stub_dst)
     print(f"스텁 저장됨: {stub_dst} ({stub_dst.stat().st_size // 1024 // 1024}MB)")
@@ -49,12 +49,12 @@ def build_builder():
         "--onefile",
         "--windowed",
         "--noconfirm",
-        "--distpath", str(ROOT / "dist"),
+        "--distpath", str(ROOT / "builds"),
         "--workpath", str(ROOT / "build_tmp" / "builder"),
         "--specpath", str(ROOT / "build_tmp"),
         "--add-data", f"{stub};.",
     ])
-    result = ROOT / "dist" / "TranslatePacker.exe"
+    result = ROOT / "builds" / "TranslatePacker.exe"
     print(f"\n빌드 완료: {result} ({result.stat().st_size // 1024 // 1024}MB)")
 
 
