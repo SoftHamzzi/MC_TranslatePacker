@@ -68,7 +68,7 @@
 ### 설치
 
 ```bash
-git clone https://github.com/your-username/MC_TranslatePacker.git
+git clone https://github.com/softhamzzi/MC_TranslatePacker.git
 cd MC_TranslatePacker
 uv sync
 ```
